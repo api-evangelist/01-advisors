@@ -1,8 +1,15 @@
 aid: 01-advisors
 name: 01 Advisors
-description: '01 Advisors is a company surfaced as a portfolio company of foundry-group and added to the
-  API Evangelist network as a stub for enrichment. Sector: venture-capital. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: '01 Advisors (01A) is an early-growth venture capital and advisory firm
+  founded in 2018 by former Twitter CEO Dick Costolo and former Twitter COO Adam Bain,
+  with former Facebook Chief Revenue Officer David Fischer as a third general partner.
+  Headquartered in San Francisco with a New York office, the firm positions itself
+  as "venture coaches" that deliberately avoid taking board seats, focusing on Series
+  B companies with product-market fit that need help building professional sales organizations
+  and revenue operations. It manages roughly $920M across multiple funds. Added to
+  the API Evangelist network as a venture-capital portfolio lead surfaced via foundry-group;
+  the firm runs a corporate marketing website (Squarespace) and publishes no public
+  API, developer portal, or machine-readable surface.'
 url: https://raw.githubusercontent.com/api-evangelist/01-advisors/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +17,31 @@ x-backed-by:
 - foundry-group
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
+image: https://static1.squarespace.com/static/5d7687bc1df12933dc7edbc6/t/6601aefcde16691387cd6fa3/1765839789329/01A_Main_Logo_Black.png?format=1500w
 tags:
 - Company
 - Venture Capital
+- Venture Firm
+- Investor
+- Startups
+- Series B
+- San Francisco
+- New York
+- Advisory
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +49,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/01-advisors-domain-security.yml
 - type: Website
   url: https://01a.com
+- type: About
+  url: https://01a.com/about
+- type: Portfolio
+  url: https://01a.com/featured
+- type: Careers
+  url: https://jobs.01a.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
